@@ -3,7 +3,7 @@
     <!-- Bitbucket -->
     <remote
         name="bitbucket"
-        fetch="ssh://git@github.org/barracksiot/" />
+        fetch="ssh://git@github.com/barracksiot/" />
     <!-- Default Branch or Tag -->
     <default
         revision="2.0.0"
