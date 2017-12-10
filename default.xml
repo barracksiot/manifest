@@ -49,7 +49,7 @@
     <project name="environment"                   remote="github" path="environment" >
         <copyfile src="build.gradle"              dest="build.gradle" />
         <copyfile src="settings.gradle"           dest="settings.gradle" />
-        <copyfile src="gradle"                    dest="gradle" />
+        <copyfile src="gradle/"                   dest="gradle/" />
         <copyfile src="gradlew"                   dest="gradlew" />
         <copyfile src="gradlew.bat"               dest="gradlew.bat" />
     </project>
