@@ -13,7 +13,7 @@
     <!-- Projects -->
 
     <!-- Legacy services -->
-    <project name="barracks-web-ui"               remote="github" path="v1/web-ui"                       groups="docker,service,legacy"          revision="1.0.0" />
+    <project name="web-ui"                        remote="github" path="v1/web-ui"                       groups="docker,service,legacy"          revision="1.0.0" />
     <project name="member-gateway"                remote="github" path="v1/member-gateway"               groups="gradle,docker,gateway,legacy"   revision="1.0.0" />
     <project name="device-service"                remote="github" path="v1/device-service"               groups="gradle,docker,service,legacy"   revision="1.0.0" />
     <project name="package-service"               remote="github" path="v1/package-service"              groups="gradle,docker,service,legacy"   revision="1.0.0" />
@@ -26,14 +26,14 @@
     <project name="device-gateway"                remote="github" path="gateways/device"                            groups="gradle,docker,gateway" />
     <project name="member-gateway"                remote="github" path="gateways/member"                            groups="gradle,docker,gateway" />
 
-    <project name="barracks-web-ui"               remote="github" path="services/web-ui"                            groups="docker,service" />
+    <project name="web-ui"                        remote="github" path="services/web-ui"                            groups="docker,service" />
 
     <project name="authorization-service"         remote="github" path="services/authorization"                     groups="gradle,docker,service" />
     <project name="subscription-service"          remote="github" path="services/subscription"                      groups="gradle,docker,service" />
     <project name="component-service"             remote="github" path="services/component"                         groups="gradle,docker,service" />
     <project name="deployment-service"            remote="github" path="services/deployment"                        groups="gradle,docker,service" />
     <project name="device-service"                remote="github" path="services/device"                            groups="gradle,docker,service" />
-    <project name="google-analytics-service"      remote="github" path="services/google-analytics"                  groups="gradle,docker,service" />
+    <project name="googleanalytics-service"       remote="github" path="services/google-analytics"                  groups="gradle,docker,service" />
     <project name="bigquery-service"              remote="github" path="services/bigquery"                          groups="gradle,docker,service" />
     <project name="messaging-service"             remote="github" path="services/messaging"                         groups="gradle,docker,service" />
     <project name="rabbitmq-auth-service"         remote="github" path="services/rabbitmq-auth"                     groups="gradle,docker,service" />
