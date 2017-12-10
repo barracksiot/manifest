@@ -52,6 +52,8 @@
         <copyfile src="gradle/"                   dest="gradle/" />
         <copyfile src="gradlew"                   dest="gradlew" />
         <copyfile src="gradlew.bat"               dest="gradlew.bat" />
+        <copyfile src="gradle/wrapper/gradle-wrapper.jar"           dest="gradle/wrapper/gradle-wrapper.jar" />
+        <copyfile src="gradle/wrapper/gradle-wrapper.properties"    dest="gradle/wrapper/gradle-wrapper.properties" />
     </project>
 
 </manifest>
