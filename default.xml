@@ -19,8 +19,8 @@
     <project name="package-service"               remote="github" path="v1/package-service"              groups="gradle,docker,service,legacy"   revision="1.0.0" />
     <project name="update-service"                remote="github" path="v1/update-service"               groups="gradle,docker,service,legacy"   revision="1.0.0" />
     <project name="googleanalytics-service"       remote="github" path="v1/google-analytics-service"     groups="gradle,docker,service,legacy"   revision="1.0.0" />
-    <project name="common-libs"                   remote="github" path="v1/common-libs"                  groups="gradle,lib"                     revision="1.0.0" />
-    <project name="common-test-libs"              remote="github" path="v1/common-test-libs"             groups="gradle,lib"                     revision="1.0.0" />
+    <project name="common-libs"                   remote="github" path="v1/common-libs"                  groups="gradle,lib"                     revision="0.0.5" />
+    <project name="common-test-libs"              remote="github" path="v1/common-test-libs"             groups="gradle,lib"                     revision="0.0.5" />
 
     <!-- Services -->
     <project name="device-gateway"                remote="github" path="gateways/device"                            groups="gradle,docker,gateway" />
