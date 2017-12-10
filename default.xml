@@ -2,75 +2,53 @@
 <manifest>
     <!-- Bitbucket -->
     <remote
-        name="bitbucket"
+        name="github"
         fetch="ssh://git@github.com/barracksiot/" />
     <!-- Default Branch or Tag -->
     <default
         revision="2.0.0"
-        remote="bitbucket"
+        remote="github"
         sync-j="2" />
 
     <!-- Projects -->
 
     <!-- Legacy services -->
-    <project name="barracks-web-ui"               remote="bitbucket" path="v1/web-ui"                       groups="docker,service,legacy"          revision="1.0.0" />
-    <project name="member-gateway"                remote="bitbucket" path="v1/member-gateway"               groups="gradle,docker,gateway,legacy"   revision="1.0.0" />
-    <project name="device-service"                remote="bitbucket" path="v1/device-service"               groups="gradle,docker,service,legacy"   revision="1.0.0" />
-    <project name="package-service"               remote="bitbucket" path="v1/package-service"              groups="gradle,docker,service,legacy"   revision="1.0.0" />
-    <project name="update-service"                remote="bitbucket" path="v1/update-service"               groups="gradle,docker,service,legacy"   revision="1.0.0" />
-    <project name="google-analytics-service"      remote="bitbucket" path="v1/google-analytics-service"     groups="gradle,docker,service,legacy"   revision="1.0.0" />
-    <project name="common-libs"                   remote="bitbucket" path="v1/common-libs"                  groups="gradle,lib"                     revision="1.0.0" />
-    <project name="common-test-libs"              remote="bitbucket" path="v1/common-test-libs"             groups="gradle,lib"                     revision="1.0.0" />
+    <project name="barracks-web-ui"               remote="github" path="v1/web-ui"                       groups="docker,service,legacy"          revision="1.0.0" />
+    <project name="member-gateway"                remote="github" path="v1/member-gateway"               groups="gradle,docker,gateway,legacy"   revision="1.0.0" />
+    <project name="device-service"                remote="github" path="v1/device-service"               groups="gradle,docker,service,legacy"   revision="1.0.0" />
+    <project name="package-service"               remote="github" path="v1/package-service"              groups="gradle,docker,service,legacy"   revision="1.0.0" />
+    <project name="update-service"                remote="github" path="v1/update-service"               groups="gradle,docker,service,legacy"   revision="1.0.0" />
+    <project name="google-analytics-service"      remote="github" path="v1/google-analytics-service"     groups="gradle,docker,service,legacy"   revision="1.0.0" />
+    <project name="common-libs"                   remote="github" path="v1/common-libs"                  groups="gradle,lib"                     revision="1.0.0" />
+    <project name="common-test-libs"              remote="github" path="v1/common-test-libs"             groups="gradle,lib"                     revision="1.0.0" />
 
     <!-- Services -->
-    <project name="device-gateway"                remote="bitbucket" path="gateways/device"                            groups="gradle,docker,gateway" />
-    <project name="member-gateway"                remote="bitbucket" path="gateways/member"                            groups="gradle,docker,gateway" />
+    <project name="device-gateway"                remote="github" path="gateways/device"                            groups="gradle,docker,gateway" />
+    <project name="member-gateway"                remote="github" path="gateways/member"                            groups="gradle,docker,gateway" />
 
-    <project name="barracks-web-ui"               remote="bitbucket" path="services/web-ui"                            groups="docker,service" />
+    <project name="barracks-web-ui"               remote="github" path="services/web-ui"                            groups="docker,service" />
 
-    <project name="authorization-service"         remote="bitbucket" path="services/authorization"                     groups="gradle,docker,service" />
-    <project name="subscription-service"          remote="bitbucket" path="services/subscription"                      groups="gradle,docker,service" />
-    <project name="component-service"             remote="bitbucket" path="services/component"                         groups="gradle,docker,service" />
-    <project name="deployment-service"            remote="bitbucket" path="services/deployment"                        groups="gradle,docker,service" />
-    <project name="device-service"                remote="bitbucket" path="services/device"                            groups="gradle,docker,service" />
-    <project name="google-analytics-service"      remote="bitbucket" path="services/google-analytics"                  groups="gradle,docker,service" />
-    <project name="bigquery-service"              remote="bitbucket" path="services/bigquery"                          groups="gradle,docker,service" />
-    <project name="messaging-service"             remote="bitbucket" path="services/messaging"                         groups="gradle,docker,service" />
-    <project name="rabbitmq-auth-service"         remote="bitbucket" path="services/rabbitmq-auth"                     groups="gradle,docker,service" />
-    <project name="event-dispatcher"              remote="bitbucket" path="services/event-dispatcher"                  groups="gradle,docker,service" />
-    <project name="webhook-service"               remote="bitbucket" path="services/webhook"                           groups="gradle,docker,service" />
-    <project name="barracks-frontend-service"     remote="bitbucket" path="services/frontend"                          groups="docker,service" />
-    <project name="rabbitmq"                      remote="bitbucket" path="services/rabbitmq"                          groups="docker,service" />
-
+    <project name="authorization-service"         remote="github" path="services/authorization"                     groups="gradle,docker,service" />
+    <project name="subscription-service"          remote="github" path="services/subscription"                      groups="gradle,docker,service" />
+    <project name="component-service"             remote="github" path="services/component"                         groups="gradle,docker,service" />
+    <project name="deployment-service"            remote="github" path="services/deployment"                        groups="gradle,docker,service" />
+    <project name="device-service"                remote="github" path="services/device"                            groups="gradle,docker,service" />
+    <project name="google-analytics-service"      remote="github" path="services/google-analytics"                  groups="gradle,docker,service" />
+    <project name="bigquery-service"              remote="github" path="services/bigquery"                          groups="gradle,docker,service" />
+    <project name="messaging-service"             remote="github" path="services/messaging"                         groups="gradle,docker,service" />
+    <project name="rabbitmq-auth-service"         remote="github" path="services/rabbitmq-auth"                     groups="gradle,docker,service" />
+    <project name="event-dispatcher"              remote="github" path="services/event-dispatcher"                  groups="gradle,docker,service" />
+    <project name="webhook-service"               remote="github" path="services/webhook"                           groups="gradle,docker,service" />
+    <project name="frontend-service"              remote="github" path="services/frontend"                          groups="docker,service" />
+    <project name="rabbitmq"                      remote="github" path="services/rabbitmq"                          groups="docker,service" />
 
     <!-- Libs -->
-    <project name="common-libs"                   remote="bitbucket" path="libs/common"                                groups="gradle,lib" />
-    <project name="common-test-libs"              remote="bitbucket" path="libs/common-test"                           groups="gradle,lib" />
+    <project name="common-libs"                   remote="github" path="libs/common"                                groups="gradle,lib" />
+    <project name="common-test-libs"              remote="github" path="libs/common-test"                           groups="gradle,lib" />
 
-    <project name="postman"                       remote="bitbucket" path="tests/postman" />
-
-    <project name="barracks-services-environment" remote="bitbucket" path="environment" >
+    <project name="environment"                   remote="github" path="environment" >
         <copyfile src="build.gradle"              dest="build.gradle" />
         <copyfile src="settings.gradle"           dest="settings.gradle" />
-    </project>
-
-    <project name="hooks"                         remote="bitbucket" path="tools/hooks"                                groups="tools" >
-        <copyfile src="pre-push"                  dest="gateways/member/.git/hooks/pre-push" />
-        <copyfile src="pre-push"                  dest="gateways/device/.git/hooks/pre-push" />
-        <copyfile src="pre-push"                  dest="services/authorization/.git/hooks/pre-push" />
-        <copyfile src="pre-push"                  dest="services/device/.git/hooks/pre-push" />
-        <copyfile src="pre-push"                  dest="services/package/.git/hooks/pre-push" />
-        <copyfile src="pre-push"                  dest="services/subscription/.git/hooks/pre-push" />
-        <copyfile src="pre-push"                  dest="services/update/.git/hooks/pre-push" />
-        <copyfile src="pre-push"                  dest="services/component/.git/hooks/pre-push" />
-        <copyfile src="pre-push"                  dest="services/deployment/.git/hooks/pre-push" />
-        <copyfile src="pre-push"                  dest="services/google-analytics/.git/hooks/pre-push" />
-        <copyfile src="pre-push"                  dest="services/bigquery/.git/hooks/pre-push" />
-        <copyfile src="pre-push"                  dest="services/messaging/.git/hooks/pre-push" />
-        <copyfile src="pre-push"                  dest="services/rabbitmq-auth/.git/hooks/pre-push" />
-        <copyfile src="pre-push"                  dest="services/event-dispatcher/.git/hooks/pre-push" />
-        <copyfile src="pre-push"                  dest="services/webhook/.git/hooks/pre-push" />
-
     </project>
 
 </manifest>
